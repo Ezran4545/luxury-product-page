@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Watch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-theme="light">
+
+<nav>
+  <div class="logo">LUXE</div>
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode">Dark Mode</button>
+</nav>
+
+<div class="breadcrumb">
+  <a href="#">Home</a>
+  <a href="#">Watches</a>
+  <span>Chrono Elite</span>
+</div>
+
+<section class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <img id="mainImage" src="https://images.pexels.com/photos/29324398/pexels-photo-29324398.jpeg">
+
+    <div class="gallery-wrapper">
+      <button class="scroll-btn left">‹</button>
+
+      <div class="gallery">
+        <img class="active" src="https://images.pexels.com/photos/33860144/pexels-photo-33860144.jpeg">
+        <img src="https://images.pexels.com/photos/9131825/pexels-photo-9131825.jpeg">
+        <img src="https://images.pexels.com/photos/12883180/pexels-photo-12883180.jpeg">
+        <img src="https://images.pexels.com/photos/10688098/pexels-photo-10688098.png">
+        <img src="https://images.pexels.com/photos/10478973/pexels-photo-10478973.jpeg">
+      </div>
+
+      <button class="scroll-btn right">›</button>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-text">
+    <p class="label">Signature Collection</p>
+    <h1>Chrono Elite Watch</h1>
+    <p>Precision meets elegance. Crafted for those who value timeless design.</p>
+
+    <div class="price">
+      <div class="price-row">
+        <span class="old-price">$1,499</span>
+        <span class="new-price">$1,299</span>
+      </div>
+      <div class="discount">13% OFF</div>
+    </div>
+
+    <div class="rating">
+      ★★★★☆ <span>(4.5 / 5)</span>
+    </div>
+    <p class="stock-status">Only <strong>7 left</strong> in stock - order soon</p>
+    <p class="delivery-note">Estimated delivery: 2-4 business days</p>
+
+    <div class="variant-group">
+      <div>
+        <p class="variant-title">Case Size</p>
+        <div class="chips" id="sizeChips">
+          <button class="chip active" type="button" data-value="40mm">40mm</button>
+          <button class="chip" type="button" data-value="42mm">42mm</button>
+          <button class="chip" type="button" data-value="44mm">44mm</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="variant-title">Color</p>
+        <div class="chips" id="colorChips">
+          <button class="chip active" type="button" data-value="Gold">Gold</button>
+          <button class="chip" type="button" data-value="Silver">Silver</button>
+          <button class="chip" type="button" data-value="Black">Black</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="purchase-row">
+      <label for="quantity">Quantity</label>
+      <select id="quantity" aria-label="Select quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+
+    <div class="trust-badges">
+      <div class="trust-item">Free shipping over $99</div>
+      <div class="trust-item">30-day free returns</div>
+      <div class="trust-item">Secure checkout guaranteed</div>
+    </div>
+
+    <div class="features">
+      <div class="feature">Sapphire Glass</div>
+      <div class="feature">Swiss Movement</div>
+      <div class="feature">Water Resistant (100m)</div>
+      <div class="feature">2-Year International Warranty</div>
+    </div>
+
+    <div class="action-row">
+      <button class="buy-btn" type="button">Add to Cart</button>
+      <button class="wishlist-btn" id="wishlistBtn" type="button" aria-label="Add to wishlist">♡ Wishlist</button>
+    </div>
+    <p class="cart-note" aria-live="polite"></p>
+    <p class="payment-note">Visa, MasterCard, PayPal and Apple Pay accepted</p>
+  </div>
+
+</section>
+
+<section class="reviews-section">
+  <div class="section-heading">
+    <h2>Customer Reviews</h2>
+    <p>Real feedback from verified Luxe customers</p>
+  </div>
+  <div class="review-filters" id="reviewFilters">
+    <button class="review-filter active" type="button" data-rating="all">All</button>
+    <button class="review-filter" type="button" data-rating="5">5★</button>
+    <button class="review-filter" type="button" data-rating="4">4★</button>
+    <button class="review-filter" type="button" data-rating="3">3★ & below</button>
+  </div>
+  <div class="review-list">
+    <article class="review-card" data-rating="5">
+      <div class="review-top">
+        <strong>Amir R.</strong>
+        <span>★★★★★</span>
+      </div>
+      <p>Excellent finish and premium feel. Looks even better in person.</p>
+    </article>
+    <article class="review-card" data-rating="4">
+      <div class="review-top">
+        <strong>Chiamaka O.</strong>
+        <span>★★★★☆</span>
+      </div>
+      <p>Very classy watch and fast delivery. Packaging was great too.</p>
+    </article>
+    <article class="review-card" data-rating="3">
+      <div class="review-top">
+        <strong>Leo M.</strong>
+        <span>★★★☆☆</span>
+      </div>
+      <p>Good build quality. Strap felt a little stiff on day one but improved.</p>
+    </article>
+  </div>
+</section>
+
+<section class="recent-section">
+  <div class="section-heading">
+    <h2>Recently Viewed</h2>
+    <p>Continue exploring related luxury pieces</p>
+  </div>
+  <div class="recent-grid">
+    <article class="recent-card">
+      <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Aurelia Silver Watch">
+      <h3>Aurelia Silver</h3>
+      <p>$899</p>
+    </article>
+    <article class="recent-card">
+      <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg" alt="Noir Automatic Watch">
+      <h3>Noir Automatic</h3>
+      <p>$1,099</p>
+    </article>
+    <article class="recent-card">
+      <img src="https://images.pexels.com/photos/10688098/pexels-photo-10688098.png" alt="Regal Gold Chrono Watch">
+      <h3>Regal Gold Chrono</h3>
+      <p>$1,249</p>
+    </article>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button id="lightboxClose" class="lightbox-control close-btn" type="button" aria-label="Close image viewer">×</button>
+    <img id="lightboxImg" alt="Product preview">
+    <div class="lightbox-tools">
+      <button id="zoomOutBtn" class="lightbox-control" type="button" aria-label="Zoom out">−</button>
+      <button id="zoomResetBtn" class="lightbox-control" type="button" aria-label="Reset zoom">100%</button>
+      <button id="zoomInBtn" class="lightbox-control" type="button" aria-label="Zoom in">+</button>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-buy-bar">
+  <div>
+    <p class="mobile-price-label">Today</p>
+    <p class="mobile-price">$1,299</p>
+  </div>
+  <div class="mobile-buy-actions">
+    <select id="mobileQuantity" aria-label="Select mobile quantity">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <button class="mobile-buy-btn" type="button">Add to Cart</button>
+  </div>
+</div>
+
+<div class="mini-cart" id="miniCart">
+  <div class="mini-cart-info">
+    <p class="mini-cart-title">Cart Summary</p>
+    <p class="mini-cart-meta"><span id="miniCartCount">0</span> item(s) · <strong id="miniCartTotal">$0</strong></p>
+  </div>
+  <button class="mini-cart-btn" id="checkoutBtn" type="button">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
