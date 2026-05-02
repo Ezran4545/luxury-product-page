@@ -4,7 +4,7 @@ A modern, responsive e-commerce product page for a luxury watch brand, built wit
 
 ## Live View
 
-[View Live Demo](https://YOUR_GITHUB_USERNAME.github.io/luxury-product-page/)
+[View Live Demo](https://ezran4545.github.io/luxury-product-page/)
 
 
 
